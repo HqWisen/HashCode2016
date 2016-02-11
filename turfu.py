@@ -1,2 +1,3 @@
-if __name__ == "__main_":
-  pass
+if __name__ == "__main__":
+  print("#TeamTurfu")
+  
