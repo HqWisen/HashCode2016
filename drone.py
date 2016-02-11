@@ -1,6 +1,6 @@
 class Drone:
 
-	# Drone.load
+	# Drone.weight
 	# Drone.number
 	# static
 	

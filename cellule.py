@@ -1,12 +1,14 @@
 class Cellule:
-	def __init__(self,maison):
-		self.maison = maison # maison warehouse or 
-		self.drones = []
+  def __init__(self):
+    self.maison = None # maison warehouse or 
+    self.drones = []
 
+  def setMaison(self, maison):
+    self.maison = maison
+  def getMaison(self):
+    return self.maison
 	def moveIn(self,drone):
-		self.drones.append(drone)
+    self.drones.append(drone)
 
-	def 
-
-	def isIn(self,truc):
-		return truc in self.trucs
+  def isIn(self,truc):
+    return truc in self.trucs
