@@ -61,8 +61,4 @@ class Drone:
         self.currentCommand[1] = "("
         for i in params:
             self.currentCommand[1] += params+","
-<<<<<<< HEAD
         self.currentCommand[1] = self.currentCommand[1][:-1] + ")"
-=======
-        self.currentCommand[1] = self.currentCommand[1][:-1] + ")"
->>>>>>> a9b057ad5bf52293afebf35b7e10142f576e4bf3
