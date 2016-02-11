@@ -3,6 +3,7 @@ from productType import *
 from warehouse import *
 from delivery import *
 from drone import *
+from droneManager import *
 
 class Parser:
   def __init__(self, fileName):
@@ -57,15 +58,18 @@ class Parser:
     for i in range(Warehouse.number):
       self.carte.setMaisonOn(warehouseList[i])
     for i in range(Delivery.number):
-      self.carte.setMaisonOn(deliveryList[i])
+      self.carte.setMaisonOn(deliveryList[i]) 
+    self.droneManager = DroneManager(self.carte, Drone.number, warehouseList, deliveryList, productList)
     
-  
   def convertSeqToInt(self, L):
     for i in range(len(L)):
       L[i] = int(L[i]);
+
+  def getDroneManager(self):
+    return self.droneManager
       
 if __name__ == "__main__":
-  parser = Parser("busy_day.in");
-
-  
+  parser = Parser("mother_of_all_warehouses.in");
+  droneManager = parser.getDroneManager()
+  droneManager.process()
   
