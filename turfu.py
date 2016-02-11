@@ -2,7 +2,6 @@ class Warehouse:
   def __init__(self):
     pass
 
-  
 class ProductType:
   def __init__(self, _id, weight):
     self._id = _id;
@@ -36,10 +35,10 @@ class Parser:
     self.f = open(fileName)
     self.lines = self.f.readlines()
     print(self.lines)
-    self.close()
+    self.f.close()
     
 if __name__ == "__main__":
-  
+  parser = Parser("busy_day.in");
 
   
   
